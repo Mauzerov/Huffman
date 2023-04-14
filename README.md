@@ -29,7 +29,7 @@
 > ### 1. Pozyskiwanie Danych
 > > Zdobycie ciągu danych do kompresji.
 > ### 2. Tworzenie tablicy częstotliwości
-> > Dla każdego unikalnego elementu w ciągu danych przypisać ilość jego wystąpień.
+> > Dla każdego unikalnego elementu w ciągu danych należy przypisać ilość jego wystąpień.
 > ### 3. Tworzenie kolejki piorytetowej
 > > Dla każdego elementu tablicy: do kolejki dodaje się (Leaf Node) przechowujący symbol z jego ilością wystąpień.
 > ### 4. Tworzenie drzewa Huffmana

@@ -1,8 +1,9 @@
 # Kompresja Huffmana
 
 > Jeden z najprotsztych, bezstratnym algorytmów kompresujących, jednak nie należy do najszybszych. \
-> Stosuje się go jako ostatni etap kompresji po użyciu innych metod kompresji, bardzo żadko stosuje się go oddzilnie. \
-> Kompresja Huffmana nie jest doskonała dlatego stosuje sie ją ze względu na prostote oraz brak ograniczeń patentowych.
+> Stosuje się go często jako ostatni etap kompresji po użyciu innych metod kompresji, bardzo żadko stosuje się go oddzilnie. \
+> Kompresja Huffmana nie jest doskonała dlatego stosuje sie ją ze względu na prostote oraz brak ograniczeń patentowych. \
+> Wykozystać można go do dowolnych danych, nalezy tylko pamiętać że proporcja komprsji danych bez powtórzeń będzie mniejsze niż 1, co w rezultacie spowoduje zwiekszenie sie pliku wynikowego
 
 ### Zalety:
 - Zmienno długośiowy schemat kodowania, nie wymaga dodatkowych znaczników do oddzielania kolejnych wartości, gdyż zmienne długości kodów same wyznaczają koniec elementu

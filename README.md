@@ -1,6 +1,6 @@
 # Kompresja Huffmana
 
-> Jedem z najprotsztych, bezstratnym algorytmów kompresujących, jednak nie należy do najefektywniejszych. \
+> Jeden z najprotsztych, bezstratnym algorytmów kompresujących, jednak nie należy do najszybszych. \
 > Stosuje się go jako ostatni etap kompresji po użyciu innych metod kompresji, bardzo żadko stosuje się go oddzilnie. \
 > Kompresja Huffmana nie jest doskonała dlatego stosuje sie ją ze względu na prostote oraz brak ograniczeń patentowych.
 

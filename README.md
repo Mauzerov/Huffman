@@ -26,32 +26,31 @@
 > 5. Przypisywanie Kodów
 > 6. Finalna Kompresja
 > ### 1. Pozyskiwanie Danych
-> > Zdobycie ciągu danych do kompresji
+> > Zdobycie ciągu danych do kompresji.
 > ### 2. Tworzenie tablicy częstotliwości
-> > Dla każdego unikalnego elementu w ciągu danych przypisać ilość jego wystąpień
+> > Dla każdego unikalnego elementu w ciągu danych przypisać ilość jego wystąpień.
 > ### 3. Tworzenie kolejki piorytetowej
-> > Dla każdego elementu tablicy: do kolejki dodaje się (Leaf Node) \
-> > przechowujący symbol z jego ilością wystąpień
+> > Dla każdego elementu tablicy: do kolejki dodaje się (Leaf Node) przechowujący symbol z jego ilością wystąpień.
 > ### 4. Tworzenie drzewa Huffmana
 > > Dopóki kolejka posiada przynajmniej 2 elementy: \
-> > zdejmuje się z wieszchu 2 najmniej częste elementy \
-> > tworzy się z nich nowy (Node), gdzie częstotliwością jest suma 2 zdjętych (Node) \
-> > nowe (Node) przechowuje również lewy (Node) i prawy (Node) przypisane zdjętym (Node) w dowolnej kolejnosci \
-> > następnie dodaje się nowy (Node) do kolejki \
-> > ostatnim elementem kolejki jest głowa drzewa Huffmana
+> > zdejmuje się z wieszchu 2 najmniej częste elementy. \
+> > tworzy się z nich nowy (Node), gdzie częstotliwością jest suma 2 zdjętych (Node). \
+> > nowe (Node) przechowuje również lewy (Node) i prawy (Node) przypisane zdjętym (Node) w dowolnej kolejnosci. \
+> > następnie dodaje się nowy (Node) do kolejki. \
+> > ostatnim elementem kolejki jest głowa drzewa Huffmana.
 > ### 5. Przypisywanie Kodów 
-> > Kody przypisuje się przez przechodznie drzewa \
-> > Gdy przechodzi się w lewo przypisuje sie kod 0 \
-> > Gdy przechodzi się w prawo przypisuje sie kod 1 \
-> > Kodem dla elemnetu jest konkatenacja (0, 1) napotanych na drodze od głowy do danego elementu
+> > Kody przypisuje się przez przechodznie drzewa: \
+> > Gdy przechodzi się w lewo przypisuje sie kod 0. \
+> > Gdy przechodzi się w prawo przypisuje sie kod 1. \
+> > Kodem dla elemnetu jest konkatenacja (0, 1) napotanych na drodze od głowy do danego elementu.
 > ### 6. Finalna Kompresja
-> > Każdy element w naszym ciągu danych zamieniamy na Kod przypisany z drzewa \
-> > Aby umożliwić dekompresacje należy zapisać również drzewo, lub tablice, albo oba \
-> > Przechowywanie obu jest najbardziej efektywne, jak i najszybsze do zdekodowania \
-> > Nie przechowywanie żadnego, sprawi że dokładne dekodowanie będzie praktycznie niewykonalne
+> > Każdy element w naszym ciągu danych zamieniamy na Kod przypisany z drzewa. \
+> > Aby umożliwić dekompresacje należy zapisać również drzewo, lub tablice, albo oba. \
+> > Przechowywanie obu jest najbardziej efektywne, jak i najszybsze do zdekodowania. \
+> > Nie przechowywanie żadnego, sprawi że dokładne dekodowanie będzie praktycznie niewykonalne.
 ### Dekompresja:
-> Proces Dekompresji polega na przejsciu drzewa, które mogło być odczytane z nagłówka pliku, bądź wygenerowane z tablicy częstotliwości, w zależności co zostało zapisane \
-> Następnym krokiem jest przejcie drzewa "bit po bicie"(0, 1) \
-> z zasadami takimi samymi jak przy kompresji 0 - lewo, 1 - prawo \
-> w momencie napotkania wartości w drzewie wypisuje się ją i wraca na początek drzewa \
-> w momencie napotkania końca strumienia "bitów", dekompresja zostaje zakończona
+> Proces Dekompresji polega na przejsciu drzewa, które mogło być odczytane z nagłówka pliku, bądź wygenerowane z tablicy częstotliwości, w zależności co zostało zapisane. \
+> Następnym krokiem jest przejcie drzewa "bit po bicie"(0, 1), \
+> z zasadami takimi samymi jak przy kompresji 0 - lewo, 1 - prawo. \
+> w momencie napotkania wartości w drzewie wypisuje się ją i wraca na początek drzewa. \
+> natomiast w momencie napotkania końca strumienia "bitów", dekompresja zostaje zakończona.
